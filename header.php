@@ -1,0 +1,80 @@
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+    <meta charset="<?php $this->options->charset(); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title><?php if($this->_currentPage>1): ?>第 <?php echo $this->_currentPage ?> 页 - <?php endif; ?><?php $this->archiveTitle(array(
+            'category'  =>  _t('分类 %s 下的文章'),
+            'search'    =>  _t('包含关键字 %s 的文章'),
+            'tag'       =>  _t('标签 %s 下的文章'),
+            'author'    =>  _t('%s 发布的文章')
+        ), '', ' - '); ?><?php if($this->is('post')): ?><?php echo $this->categories[0]['name']; ?> - <?php endif; ?><?php $this->options->title(); ?></title>
+
+    <!-- 使用url函数转换相关路径 -->
+    <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=0.0.1'); ?>">
+
+    <script type="text/javascript" src="<?php $this->options->themeUrl('js/jquery.min.js?ver=1.11.3'); ?>"></script>
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <?php $this->header(); ?>
+</head>
+<body class="<?php if ($this->is('index')): ?> home blog<?php endif; ?><?php if ($this->is('post')): ?> single single-post<?php echo ($this->options->sidebarLocation=='1'?' col-2cl':' col-2cr'); ?><?php endif; ?><?php if ($this->is('single')): ?> page<?php endif; ?>">
+<!--[if lt IE 8]>
+    <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
+<![endif]-->
+<div id="wrapper">
+    <div id="wrapper-inner">
+    <header id="header" class="group">
+
+        <div class="slant-left"></div>
+        <div class="slant-right"></div>
+
+        <div class="container group">
+            <div class="group pad">
+
+                <?php echo siteTitle($this) ; ?>
+
+                <p class="site-description"><?php $this->options->description() ?></p>
+
+                <div class="clear"></div>
+
+                <?php if (!empty($this->options->navBar)): ?>
+                    <nav class="nav-container group" id="nav-header">
+                        <div class="nav-toggle"><i class="fa fa-bars"></i></div>
+                        <div class="nav-text"><!-- put your mobile menu text here --></div>
+                        <div class="nav-wrap container">
+                            <?php echo showNavBar($this); ?>
+                        </div>
+                    </nav><!--/#nav-header-->
+
+                <?php endif; ?>
+
+                <?php if ( $this->options->authorAvatar ): ?>
+                    <div class="slant-avatar"><a href="<?php $this->options->siteUrl(); ?>"><img src="<?php $this->options->authorAvatar() ?>" alt="" /></a></div>
+                <?php endif; ?>
+
+            </div><!--/.pad-->
+        </div><!--/.container-->
+    </header><!--/#header-->
+
+    <div id="subheader">
+        <div class="container">
+            <?php showSocialLinks() ; ?>
+        </div>
+    </div><!--/#subheader-->
+
+    <?php $this->need('inc/page-title.php'); ?>
+
+    <div id="page">
+        <div class="container group">
