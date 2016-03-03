@@ -10,7 +10,6 @@
             </div>
         </article>
         <div class="clear"></div>
-        <p class="post-tags"><span><?php _e('标签: '); ?></span><?php $this->tags(', ', true, 'none'); ?></p>
 
         <?php $this->need('inc/share.php'); ?>
 
