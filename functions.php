@@ -52,6 +52,13 @@ function themeConfig($form)
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 网站头部标题将以图片显示'));
     $form->addInput($logoUrl);
 
+    $activeTopSocialLinks = new Typecho_Widget_Helper_Form_Element_Radio('activeTopSocialLinks',
+        array(
+            '1' => '是',
+            '0' => '否',
+        ),'1', _t('是否在页面头部显示个人社交链接'), NULL);
+    $form->addInput($activeTopSocialLinks);
+
     $weibo = new Typecho_Widget_Helper_Form_Element_Text('weibo', NULL, NULL, _t('新浪微博'), _t('请输入你的新浪微博个性域名，例如：<strong style="color: red;">http://weibo.com/dt27</strong>，如果没有<a href="http://account.weibo.com/set/index?topnav=1&wvr=6" target="_blank">点此申请</a>'));
     $form->addInput($weibo);
     $qq = new Typecho_Widget_Helper_Form_Element_Text('qq', NULL, NULL, _t('QQ'), _t('请输入你的QQ通讯组件网址，例如：&lta target="_blank" href="<strong style="color: red;">http://sighttp.qq.com/authd?IDKEY=50db05c40debf88f20a03b0bcba4009080799fe5402a2b2c</strong>"&gt，如果没有<a href="http://shang.qq.com/v3/widget.html" target="_blank">点此查看</a>'));

@@ -70,7 +70,9 @@
 
     <div id="subheader">
         <div class="container">
+            <?php if($this->options->activeTopSocialLinks == '1'): ?>
             <?php showSocialLinks() ; ?>
+            <?php endif; ?>
         </div>
     </div><!--/#subheader-->
 
