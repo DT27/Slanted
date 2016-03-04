@@ -34,8 +34,8 @@
                                 <div class="format-box"><?php $this->date('D'); ?></div>
                                 <?php $this->day() ?>
                             </div>
-                            <div class="post-date-month"><?php $this->month() ?></div>
-                            <div class="post-date-year"><?php $this->year() ?></div>
+                            <div class="post-date-month"><a href="<?php $this->options->siteUrl(); ?><?php $this->year() ?>/<?php $this->month(); ?>/" title="<?php echo $this->year.'年'.$this->month.'月'; ?>"><?php $this->month() ?></a></div>
+                            <div class="post-date-year"><a href="<?php $this->options->siteUrl(); ?><?php $this->year() ?>/" title="<?php echo $this->year.'年'; ?>"><?php $this->year() ?></a></div>
                         </div>
                         <div class="post-comments">
                             <?php if($this->options->activeViews): ?>

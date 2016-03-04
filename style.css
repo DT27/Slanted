@@ -690,8 +690,12 @@ box-shadow: inset 1px 0 0 rgba(255,255,255,0.05); }
 
 .post-date { float: left; margin-left: -60px; margin-right: 20px; color: #999; width: 40px; text-align: center; text-transform: uppercase; line-height: 1.6em; }
 .post-date-day { background: #ffe691; color: #ae8f23; font-size: 18px; font-weight: 600; padding: 0 0 2px; }
-.post-date-month { background: #eee; border-top: 1px solid #e5e5e5; color: #999; font-size: 12px; }
-.post-date-year { background: #fff; border: 1px solid #eee; color: #ccc; font-size: 12px; }
+.post-date-month { background: #eee; border-top: 1px solid #e5e5e5;}
+.post-date-month a{color: #999; font-size: 14px;}
+.post-date-month a:hover{text-decoration: underline;}
+.post-date-year { background: #fff; border: 1px solid #eee;}
+.post-date-year a{color: #ccc; font-size: 14px;}
+.post-date-year a:hover{text-decoration: underline;}
 
 .post-thumbnail {display: table; text-align: center; width: 100%; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;
     border: 1px solid #ddd; }
