@@ -70,6 +70,9 @@ function themeConfig($form)
     $twitter = new Typecho_Widget_Helper_Form_Element_Text('twitter', NULL, NULL, _t('Twitter'), _t('请输入你的 Twitter 用户名，例如：https://twitter.com/<strong style="color: red;">DT_27</strong>，<a href="https://twitter.com/settings/account" target="_blank">点此查看</a>'));
     $form->addInput($twitter);
 
+
+
+
     $authorAvatar = new Typecho_Widget_Helper_Form_Element_Text('authorAvatar', NULL, NULL, _t('作者头像'), _t('在这里填入一个图片URL地址, 将以圆形状态显示到网站顶部'));
     $form->addInput($authorAvatar);
 
@@ -91,6 +94,12 @@ function themeConfig($form)
         ),'0', _t('是否启用文章浏览量显示'), _t('未安装浏览量插件的，直接启用本选项即可<br>已经装有浏览量插件的，请确认该插件使用"views"字段，然后直接关闭该插件并启用本选项即可<br>其他情况请自行判断处理'));
     $form->addInput($activeViews);
 
+    $isShare = new Typecho_Widget_Helper_Form_Element_Radio('isShare',
+        array(
+            '1' => '是',
+            '0' => '否',
+        ),'1', _t('是否启用文章及独立页面百度分享模块'), NULL);
+    $form->addInput($isShare);
 
     $sidebarLocation = new Typecho_Widget_Helper_Form_Element_Radio('sidebarLocation',
         array(

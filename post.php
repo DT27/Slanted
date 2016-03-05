@@ -18,7 +18,9 @@
 
         <p class="post-tags"><span><?php _e('标签: '); ?></span><?php $this->tags(', ', true, 'none'); ?></p>
 
+        <?php if($this->options->isShare == '1'): ?>
         <?php $this->need('inc/share.php'); ?>
+        <?php endif; ?>
 
         <div class="clear"></div>
 <?php if($this->fields->isOriginal): ?>

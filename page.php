@@ -11,7 +11,9 @@
         </article>
         <div class="clear"></div>
 
-        <?php $this->need('inc/share.php'); ?>
+        <?php if($this->options->isShare == '1'): ?>
+            <?php $this->need('inc/share.php'); ?>
+        <?php endif; ?>
 
         <div class="clear"></div>
 

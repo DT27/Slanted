@@ -27,7 +27,7 @@ Typecho Theme
 - [ ] 自定义站点 Logo 直接上传
 - [ ] 主题配色扩充
 - [x] 博主社交链接模块可选显示
-- [ ] 百度分享链接模块可选显示
+- [x] 百度分享链接模块可选显示
 
 ## License
 ###### [Theme License](http://alxmedia.se/themes/slanted/)
