@@ -82,8 +82,14 @@ function themeConfig($form)
     $subheading = new Typecho_Widget_Helper_Form_Element_Text('subheading', NULL, '最新文章', _t('首页头部副文字'));
     $form->addInput($subheading);
 
+    $isExcerpt = new Typecho_Widget_Helper_Form_Element_Radio('isExcerpt',
+        array(
+            '0' => '默认',
+            '1' => '文本截取',
+        ),'1', _t('文章列表文章摘要内容'), _t('Typecho 默认方式根据<!--more-->标签截取内容，文本截取则仅截取设定长度的纯文本内容'));
+    $form->addInput($isExcerpt);
 
-    $excerptLength = new Typecho_Widget_Helper_Form_Element_Text('excerptLength', NULL, 200, _t('文章摘要截取长度'), _t('文章列表中截取的文章内容长度'));
+    $excerptLength = new Typecho_Widget_Helper_Form_Element_Text('excerptLength', NULL, 200, _t('文章摘要截取长度'), _t('仅在摘要内容选择文本截取时起作用'));
     $form->addInput($excerptLength);
 
 

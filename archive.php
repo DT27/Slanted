@@ -55,13 +55,14 @@
                             <a href="<?php $this->permalink(); ?>" rel="bookmark" title="<?php $this->title(); ?>"><?php $this->title(); ?></a>
                         </h2><!--/.post-title-->
 
-                        <?php if ($this->options->excerptLength != '0'): ?>
-                            <div class="entry excerpt">
+                        <div class="entry excerpt">
+                            <?php if($this->options->isExcerpt == '1'): ?>
                                 <?php $this->excerpt($this->options->excerptLength); ?>
-                            </div><!--/.entry-->
-                        <?php endif; ?>
+                            <?php else: ?>
+                                <?php $this->content(); ?>
+                            <?php endif; ?>
+                        </div><!--/.entry-->
                         <a title="<?php $this->title(); ?>" href="<?php $this->permalink(); ?>" class="more-link">- 阅读全文 -</a>
-
                     </div><!--/.post-inner-->
                 </article><!--/.post-->
     	<?php endwhile; ?>
