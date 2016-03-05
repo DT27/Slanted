@@ -43,7 +43,7 @@
                             <?php endif; ?>
                             <a href="<?php $this->permalink() ?>#comments" title="评论数"><span><i class="fa fa-comments-o"></i><?php $this->commentsNum() ?></span></a>
                         </div>
-                        <?php if ( $this->fields->thumbUrl ): ?>
+                        <?php if ( $this->options->isExcerpt == '1' && $this->fields->thumbUrl ): ?>
                             <div class="post-thumbnail small">
                                 <a href="<?php $this->permalink(); ?>" title="<?php $this->title(); ?>">
                                     <img width="320" height="320" sizes="(max-width: 320px) 100vw, 320px" alt="<?php $this->title(); ?>" class="attachment-thumb-list size-thumb-list wp-post-image" src="<?php $this->fields->thumbUrl(); ?>">
