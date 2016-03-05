@@ -63,12 +63,16 @@ function themeConfig($form)
     $form->addInput($weibo);
     $qq = new Typecho_Widget_Helper_Form_Element_Text('qq', NULL, NULL, _t('QQ'), _t('请输入你的QQ通讯组件网址，例如：&lta target="_blank" href="<strong style="color: red;">http://sighttp.qq.com/authd?IDKEY=50db05c40debf88f20a03b0bcba4009080799fe5402a2b2c</strong>"&gt，如果没有<a href="http://shang.qq.com/v3/widget.html" target="_blank">点此查看</a>'));
     $form->addInput($qq);
+    $github = new Typecho_Widget_Helper_Form_Element_Text('github', NULL, NULL, _t('GitHub'), _t('请输入 GitHub 用户名'));
+    $form->addInput($github);
     $googlePlus = new Typecho_Widget_Helper_Form_Element_Text('googlePlus', NULL, NULL, _t('Google Plus'), _t('请登录 <a href="https://plus.google.com/" target="_blank">Google Plus</a>，打开您的个人资料页，将地址栏中的<strong style="color: red;">数字</strong>填入此项，例如：https://plus.google.com/<strong style="color: red;">110361832835576626140</strong>/posts'));
     $form->addInput($googlePlus);
     $facebook = new Typecho_Widget_Helper_Form_Element_Text('facebook', NULL, NULL, _t('Facebook'), _t('请输入你的 Facebook 用户名，例如：https://www.facebook.com/<strong style="color: red;">DT27Base</strong>，<a href="https://www.facebook.com/settings?tab=account&view" target="_blank">点此查看</a>'));
     $form->addInput($facebook);
     $twitter = new Typecho_Widget_Helper_Form_Element_Text('twitter', NULL, NULL, _t('Twitter'), _t('请输入你的 Twitter 用户名，例如：https://twitter.com/<strong style="color: red;">DT_27</strong>，<a href="https://twitter.com/settings/account" target="_blank">点此查看</a>'));
     $form->addInput($twitter);
+    $steam = new Typecho_Widget_Helper_Form_Element_Text('steam', NULL, NULL, _t('Steam'), _t('请输入你的 Steam 用户名'));
+    $form->addInput($steam);
 
 
 
@@ -232,6 +236,9 @@ if (!function_exists('showSocialLinks')) {
         if (Helper::options()->qq) {
             echo '<li><a rel="nofollow" title="QQ" class="social-tooltip" href="' . Helper::options()->qq . '" target="_blank"><i class="fa fa-qq"></i></a></li>';
         }
+        if (Helper::options()->github) {
+            echo '<li><a rel="nofollow" title="GitHub" class="social-tooltip" href="https://github.com/' . Helper::options()->github . '" target="_blank"><i class="fa fa-github"></i></a></li>';
+        }
         if (Helper::options()->googlePlus) {
             echo '<li><a rel="nofollow" title="Google Plus" class="social-tooltip" href="https://plus.google.com/' . Helper::options()->googlePlus . '" target="_blank"><i class="fa fa-google"></i></a></li>';
         }
@@ -240,6 +247,9 @@ if (!function_exists('showSocialLinks')) {
         }
         if (Helper::options()->twitter) {
             echo '<li><a rel="nofollow" title="Twitter" class="social-tooltip" href="https://twitter.com/' . Helper::options()->twitter . '" target="_blank"><i class="fa fa-twitter"></i></a></li>';
+        }
+        if (Helper::options()->steam) {
+            echo '<li><a rel="nofollow" title="Steam" class="social-tooltip" href="http://steamcommunity.com/id/' . Helper::options()->steam . '" target="_blank"><i class="fa fa-steam"></i></a></li>';
         }
         echo '<li><a href="' . Helper::options()->feedUrl . '" title="RSS Feed" class="social-tooltip" rel="nofollow"><i class="fa fa-rss"></i></a></li>';
         echo '</ul>';
