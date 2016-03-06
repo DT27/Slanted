@@ -344,6 +344,10 @@ if ( ! function_exists( 'dynamicSidebar' ) ) {
             Typecho_Widget::widget('Widget_Contents_Post_Recent', 'pageSize=5')
                 ->parse('<li><a href="{permalink}">{title}</a></li>');
             echo '</ul></div>';
+        }else if($sidebarName=='footer-3'){
+            echo '<div class="widget widget_hot_entries" id="hot-posts-2"><h3 class="group"><span>最热文章</span></h3><ul>';
+            SlantedExtend_Plugin::theMostViewed(5, 0);
+            echo '</ul></div>';
         }
 
     }
@@ -359,6 +363,9 @@ if ( ! function_exists( 'isActiveSidebar' ) ) {
             return true;
         }
         if($sidebarName=='footer-2'){
+            return true;
+        }
+        if($sidebarName=='footer-3'){
             return true;
         }
     }

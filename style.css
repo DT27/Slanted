@@ -927,6 +927,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .widget_meta > h3:after { content: "\f138"; }
 .widget_recent_comments > h3:after { content: "\f0e6"; }
 .widget_recent_entries > h3:after { content: "\f017"; }
+.widget_hot_entries > h3:after { content: "\f067"; }
 .widget_calendar > h3:after { content: "\f271"; }
 .widget_rss > h3:after { content: "\f09e"; }
 .widget_pages > h3:after { content: "\f067"; }
@@ -950,6 +951,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .widget_meta ul li, 
 .widget_recent_comments ul li, 
 .widget_recent_entries ul li,
+.widget_hot_entries ul li,
 .widget_rss ul li,
 .widget_pages ul li a,
 .widget_nav_menu ul li a,
@@ -961,7 +963,8 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .widget_links ul li { color: #bbb; }
 
 .widget_recent_comments ul li,
-.widget_recent_entries ul li { color: #999; white-space:nowrap; overflow:hidden; text-overflow: ellipsis;  -o-text-overflow:ellipsis; }
+.widget_recent_entries ul li,
+.widget_hot_entries ul li { color: #999; white-space:nowrap; overflow:hidden; text-overflow: ellipsis;  -o-text-overflow:ellipsis; }
 .widget_recent_entries .post-date { display: block; }
 
 /*  widget : pages / custom menu
