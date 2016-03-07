@@ -753,7 +753,7 @@ h3.featured { color: #bbb; text-align: center; font-weight: 600; text-transform:
 /* ------------------------------------------------------------------------- *
  *  Single
 /* ------------------------------------------------------------------------- */
-.single .post-title { font-size: 42px; letter-spacing: -1px; line-height: 1.3em; }
+.single .post-title { letter-spacing: -1px; line-height: 1.3em; }
 .single .post-time { font-size: 18px; color: #999; text-align: center; text-transform: uppercase; }
 .single .entry { margin-bottom: 40px; }
 
