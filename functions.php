@@ -51,6 +51,13 @@ function themeConfig($form)
 {
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 网站头部标题将以图片显示'));
     $form->addInput($logoUrl);
+	
+    $dark = new Typecho_Widget_Helper_Form_Element_Radio('dark',
+        array(
+            '1' => '是',
+            '0' => '否',
+        ),'0', _t('启用黑色系主题'), NULL);
+    $form->addInput($dark);
 
     $activeTopSocialLinks = new Typecho_Widget_Helper_Form_Element_Radio('activeTopSocialLinks',
         array(
