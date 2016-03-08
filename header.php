@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=0.0.1'); ?>">
-
+	<?php if($this->options->dark==1): ?><link rel="stylesheet" href="<?php $this->options->themeUrl('dark.css'); ?>"><?php endif; ?>
     <script type="text/javascript" src="<?php $this->options->themeUrl('js/jquery.min.js?ver=1.11.3'); ?>"></script>
 
     <!--[if lt IE 9]>
