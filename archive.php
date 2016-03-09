@@ -53,6 +53,7 @@
 
                         <h2 class="post-title">
                             <a href="<?php $this->permalink(); ?>" rel="bookmark" title="<?php $this->title(); ?>"><?php $this->title(); ?></a>
+                            <?php if($this->user->pass('editor', true) || $post['authorId'] == $this->user->uid): ?> <a href="<?php $this->options->adminUrl(); ?>write-post.php?cid=<?php echo $this->cid;?>" target="_blank" style="color: #00b2d7; font-size: 14px; font-weight: 400;">编辑</a><?php endif; ?>
                         </h2><!--/.post-title-->
 
                         <div class="entry excerpt">

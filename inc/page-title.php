@@ -8,7 +8,7 @@
         <?php elseif ( $this->is('post') ): ?>
             <h2><?php $this->category(' <span>/</span> '); ?></h2>
         <?php elseif ( $this->is('single') ): ?>
-            <h2><?php echo singleTitle($this); ?></h2>
+            <h2><?php echo singleTitle($this); ?><?php if($this->user->pass('editor', true) || $post['authorId'] == $this->user->uid): ?> <a href="<?php $this->options->adminUrl(); ?>write-page.php?cid=<?php echo $this->cid;?>" target="_blank" style="color: #00b2d7; font-size: 14px; font-weight: 400;">编辑</a><?php endif; ?></h2>
         <?php elseif ( $this->is('search') ): ?>
             <h1>
                 <?php if ( $this->have() ): ?><i class="fa fa-search"></i><?php endif; ?>

@@ -3,7 +3,7 @@
 
 <section class="content">
 
-    <div class="post-time"><?php $this->date('Y-m-d H:i'); ?></div>
+    <div class="post-time"><?php $this->date('Y-m-d H:i'); ?><?php if($this->user->pass('editor', true) || $post['authorId'] == $this->user->uid): ?> <a href="<?php $this->options->adminUrl(); ?>write-post.php?cid=<?php echo $this->cid;?>" target="_blank">编辑</a><?php endif; ?></div>
     <div class="pad group">
 
         <article>
