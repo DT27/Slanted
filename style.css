@@ -563,7 +563,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 /*  header : search
 /* ------------------------------------ */
 .toggle-search { color: #777; z-index: 7; font-size: 18px; line-height: 24px; cursor: pointer; padding: 28px 16px; display: block; position: absolute; right: 30px; top: 0;
--moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
+-moz-transition: all 0.2s ease; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; color: #fff }
 .toggle-search:hover,
 .toggle-search.active { background: #fff; color: #555; }
 .search-expand { display: none; z-index: 8; background: #fff; position: absolute; top: 79px; right: 30px; width: 340px;

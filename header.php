@@ -47,6 +47,23 @@
 
                 <p class="site-description"><?php $this->options->description() ?></p>
 
+                <?php if(!$this->is('post')) : ?>
+                <!-- 搜索 -->
+                <div class="container">
+                    <div class="container-inner">
+                        <div class="toggle-search"><i class="fa fa-search"></i></div>
+                        <div class="search-expand" style="display: none;">
+                            <div class="search-expand-inner">
+                                <form action="./" class="searchform themeform" method="post" _lpchecked="1">
+                                    <div>
+                                        <input type="text" value="输入搜索词后回车搜索" onfocus="if(this.value=='输入搜索词后回车搜索')this.value='';" onblur="if(this.value=='')this.value='输入搜索词后回车搜索';" name="s" class="search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!--/.container-inner-->
+                </div>
+                <?php endif;?>
                 <div class="clear"></div>
 
                 <?php if (!empty($this->options->navBar)): ?>

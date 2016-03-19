@@ -11,6 +11,16 @@
 
 jQuery(document).ready(function($) {
 
+    /*  Toggle header search
+    /* ------------------------------------ */
+    $('.toggle-search').click(function(){
+        $('.toggle-search').toggleClass('active');
+        $('.search-expand').fadeToggle(250);
+        setTimeout(function(){
+            $('.search-expand input').focus();
+        }, 300);
+    });
+
     /*  Scroll to top
     /* ------------------------------------ */
     $('a#back-to-top').click(function () {
@@ -20,7 +30,7 @@ jQuery(document).ready(function($) {
 
 
     /*  Sidebar collapse
-     /* ------------------------------------ */
+    /* ------------------------------------ */
     $('body').addClass('s1-collapse');
     $('body').addClass('s2-collapse');
 
@@ -37,15 +47,13 @@ jQuery(document).ready(function($) {
         }
     });
 
+    /*  上一页、下一页文字
+    /* ------------------------------------ */
     $('.previousPage span').text($('.previousPage').attr('title'));
     $('.nextPage span').text($('.nextPage').attr('title'));
 
-
-
-
-
     /*  Mobile menu smooth toggle height
-     /* ------------------------------------ */
+    /* ------------------------------------ */
     $('.nav-toggle').on('click', function() {
         slide($('.nav-wrap .nav', $(this).parent()));
     });
