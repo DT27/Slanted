@@ -386,3 +386,19 @@ if ( ! function_exists( 'isActiveSidebar' ) ) {
         }
     }
 }
+/*  判断是否 HTTPS
+/* ------------------------------------ */
+if ( ! function_exists( 'is_HTTPS' ) ) {
+    function is_HTTPS()
+    {
+        if (!isset($_SERVER['HTTPS'])) return FALSE;
+        if ($_SERVER['HTTPS'] === 1) {  //Apache
+            return TRUE;
+        } elseif ($_SERVER['HTTPS'] === 'on') { //IIS
+            return TRUE;
+        } elseif ($_SERVER['SERVER_PORT'] == 443) { //其他
+            return TRUE;
+        }
+        return FALSE;
+    }
+}

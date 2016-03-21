@@ -13,17 +13,17 @@
         ), '', ' - '); ?><?php if($this->is('post')): ?><?php echo $this->categories[0]['name']; ?> - <?php endif; ?><?php $this->options->title(); ?></title>
 
     <!-- 使用url函数转换相关路径 -->
-    <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
+    <link rel="stylesheet" href="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/normalize/3.0.3/normalize.min.css':'http://cdn.staticfile.org/normalize/3.0.3/normalize.min.css'; ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=0.0.1'); ?>">
 	<?php if($this->options->dark==1): ?><link rel="stylesheet" href="<?php $this->options->themeUrl('dark.css'); ?>"><?php endif; ?>
-    <script type="text/javascript" src="<?php $this->options->themeUrl('js/jquery.min.js?ver=1.11.3'); ?>"></script>
+    <script type="text/javascript" src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/jquery/1.11.3/jquery.min.js':'http://cdn.staticfile.org/jquery/1.11.3/jquery.min.js'; ?>"></script>
 
     <!--[if lt IE 9]>
-    <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
-    <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/html5shiv/r29/html5.min.js':'http://cdn.staticfile.org/html5shiv/r29/html5.min.js'; ?>"></script>
+    <script src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/respond.js/1.4.2/respond.min.js':'http://cdn.staticfile.org/respond.js/1.4.2/respond.min.js'; ?>"></script>
     <![endif]-->
 
     <!-- 通过自有函数输出HTML头部信息 -->
