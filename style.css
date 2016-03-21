@@ -1182,7 +1182,8 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .comment-list .comment-author,
 .comment-list .comment-meta,
 .comment-list .comment-awaiting-moderation { font-size: 13px; display: block; float: left; line-height: 20px; }
-.comment-list .comment-author { margin-right: 6px;  position: relative;}
+.comment-list .comment-author { margin-right: 6px;  position: relative; min-width: 48px;}
+.comment-children .comment-author{min-width: 36px;}
 .comment-list .fn, .comment-list .fn a { color: #555; font-size: 13px; font-style: normal; font-weight: 600; }
 .comment-list .says { display: none; }
 .comment-list .avatar { position: absolute; left: -60px; top: 0; width: 48px; height: 48px; -webkit-border-radius: 3px; border-radius: 3px; max-width: 200%; }

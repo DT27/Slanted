@@ -5,7 +5,7 @@
  * @author     DT27
  * @copyright  Copyright (c) 2016 DT27 (https://dt27.org)
  * @license    GNU General Public License v3.0
- * @version    0.0.1
+ * @version    1.0.1
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
@@ -159,6 +159,9 @@ function themeConfig($form)
 
     $form->addInput($navBar->multiMode());
 
+    /* 增加自定义导航菜单 */
+    $customNav = new Typecho_Widget_Helper_Form_Element_Textarea('customNav', NULL, NULL, _t('添加自定义导航菜单'), _t('向顶部导航栏添加自定义项目，可添加多条<br>单条格式:<br>&lt;li class="menu-item menu-item-type-taxonomy menu-item-object-category"&gt;&lt;a href="连接地址"&gt;菜单名&lt;/a&gt;&lt;/li&gt;'));
+    $form->addInput($customNav);
 
 
     /**
@@ -229,7 +232,7 @@ if ( ! function_exists( 'showNavBar' ) ) {
                 $outHtml .= '<li id="menu-item-' . $pag['id'] . '" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-' . $pag['id'] . (($form->theId==('page-'.$pag['id'])) ? ' current-menu-item' : '') .'"><a href="' . $pag['url'] . '">' . $pag['name'] . '</a></li>';
             }
         }
-        return $outHtml . '</ul>';
+        return $outHtml . Helper::options()->customNav . '</ul>';
     }
 }
 
