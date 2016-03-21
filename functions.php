@@ -5,7 +5,7 @@
  * @author     DT27
  * @copyright  Copyright (c) 2016 DT27 (https://dt27.org)
  * @license    GNU General Public License v3.0
- * @version    1.0.1
+ * @version    1.0.2
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
@@ -51,13 +51,19 @@ function themeConfig($form)
 {
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 网站头部标题将以图片显示'));
     $form->addInput($logoUrl);
-	
-    $dark = new Typecho_Widget_Helper_Form_Element_Radio('dark',
+
+
+    /**
+     * 底部动态栏
+     */
+    $dark = new Typecho_Widget_Helper_Form_Element_Select('dark',
         array(
-            '1' => '是',
-            '0' => '否',
-        ),'0', _t('启用黑色系主题'), NULL);
-    $form->addInput($dark);
+            '0' => _t('蓝白'),
+            '1' => _t('红黑')
+        ), '0', _t('主题配色'), NULL);
+
+    $form->addInput($dark->multiMode());
+
 
     $activeTopSocialLinks = new Typecho_Widget_Helper_Form_Element_Radio('activeTopSocialLinks',
         array(
@@ -182,7 +188,7 @@ function themeConfig($form)
      * 底部动态栏
      */
     $footerWidgets = new Typecho_Widget_Helper_Form_Element_Select('footerWidgets',
-    array('1' => _t('1'),'2' => _t('2'),'3' => _t('3'),'4' => _t('4')), '2', _t('底部动态栏显示个数')
+    array('1' => _t('1'),'2' => _t('2'),'3' => _t('3'),'4' => _t('4')), '3', _t('底部动态栏显示个数')
     );
 
     $form->addInput($footerWidgets->multiMode());
