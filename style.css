@@ -1121,7 +1121,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 
 /* comment text */
 .comment-list .comment-parent { font-weight: 300; }
-.comment-list .comment-parent p { margin-bottom: 8px; color: #777; clear: both; }
+.comment-list .comment-parent p { margin-bottom: 8px; color: #777; }
 .comment-list .comment-parent strong { font-weight: bold; }
 .comment-list .comment-parent em { font-style: italic; }
 
