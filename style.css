@@ -1077,10 +1077,91 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 
 
 
+/* ------------------------------------------------------------------------- *
+ *  Dark Widgets
+/* ------------------------------------------------------------------------- */
+.dark .widget { color: #79828b; }
+.dark .widget a { color: #ccd2d8; }
+.dark .widget a:hover { color: #00b2d7; }
+.dark .widget > h3 { border-bottom-color: #3e4347; }
+.dark .widget > h3,
+.dark .widget > h3 a,
+.dark .widget > h3 a:hover { color: #fff; }
+.dark .widget select { background: transparent; border-color: #3e4347; color: #79828b; }
+
+/*  widgets : icons
+/* ------------------------------------ */
+.dark .widget > ul li:before,
+.dark .widget > ul li a:before,
+.dark .widget > div > ul li a:before  { color: #79828b; opacity: 0.5; }
+.dark .widget_calendar caption:before,
+.dark .widget > ul li a:hover:before { color: #fff; }
+
+/*  widgets : common
+/* ------------------------------------ */
+.dark .widget_archive ul li,
+.dark .widget_categories ul li,
+.dark .widget_links ul li,
+.dark .widget_meta ul li,
+.dark .widget_recent_comments ul li,
+.dark .widget_recent_entries ul li,
+.dark .widget_rss ul li,
+.dark .widget_pages ul li a,
+.dark .widget_nav_menu ul li a,
+.dark .alx-tab li,
+.dark .alx-posts li,
+.dark .widget_calendar th,
+.dark .widget_calendar td { border-color: #3e4347; }
+
+.dark .widget_archive ul li,
+.dark .widget_categories ul li,
+.dark .widget_links ul li,
+.dark .widget_recent_comments ul li,
+.dark .widget_recent_entries ul li { color: #79828b; }
+
+/*  widget : pages / custom menu
+/* ------------------------------------ */
+
+/*  widget : rss
+/* ------------------------------------ */
+.dark .widget_rss ul li a { color: #00b2d7; }
+.dark .widget_rss ul li span.rss-date { color: #ccc; }
+
+/*  widget : search
+/* ------------------------------------ */
+.dark .widget_search input.search { background: transparent; color: #ccd2d8; border: 1px solid #3e4347; }
+.dark .widget_search input.search:focus { color: #ccd2d8; }
+
+/*  widget : calendar
+/* ------------------------------------ */
+.dark .widget_calendar a:hover { color: #ccc!important; }
+.dark .widget_calendar a { color: #00b2d7; }
+.dark .widget_calendar thead { background: #3e4347; color: #ccc; -webkit-box-shadow: 0 1px 0 #3e4347; box-shadow: inset 0 -1px 0 #3e4347; }
+.dark .widget_calendar caption { background: #00b2d7; }
+
+/*  custom widget : alxtabs / alxposts
+/* ------------------------------------ */
+.dark .alx-tabs-nav { border-bottom: 1px solid #3e4347; background: #23282d; padding: 14px 30px 0; margin: 0 -30px; box-shadow: inset 0 1px 0 rgba(0,0,0,0.3); }
+.dark .alx-tabs-nav li a { border: 0; border-top: 3px solid #23282d; margin-bottom: -1px; }
+.dark .alx-tabs-nav li a:hover { color: #fff; border-bottom-color: #4c5358; }
+.dark .alx-tabs-nav li.active a { background: #32373c; color: #fff; border-top: 3px solid #00b2d7;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); }
+
+.dark .alx-tab .tab-item-category a,
+.dark .alx-posts .post-item-category a,
+.dark .alx-tab li:hover .tab-item-title a,
+.dark .alx-tab li:hover .tab-item-comment a,
+.dark .alx-posts li:hover .post-item-title a { color: #00b2d7; }
+.dark .alx-tab .tab-item-category a:hover,
+.dark .alx-posts .post-item-category a:hover { color: #ccc!important; }
+
+.dark .alx-tab .tab-item-date,
+.dark .alx-tab .tab-item-name,
+.dark .alx-posts .post-item-date { color: #79828b; }
+
 .alx-posts .post-item-title { font-size: 18px; line-height: 1.4em; font-weight: 300; }
 .alx-posts .post-item-category,
 .alx-posts .post-item-date { font-size: 14px; }
-
 
 /* ------------------------------------------------------------------------- *
  *  Comments
