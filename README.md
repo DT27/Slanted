@@ -29,6 +29,14 @@ Typecho Theme
 - [x] 博主社交链接模块可选显示
 - [x] 百度分享链接模块可选显示
 
+## Typecho 主题安装及使用
+0. **主题更新升级时，请先切换回默认主题后后再上传**
+1. [点此](https://github.com/DT27/Slanted/archive/master.zip)下载主题
+2. 将下载的文件解压，文件夹重命名为`Slanted`，上传到Typecho`usr/themes/`目录下
+3. 登陆后台，在`控制台`下拉菜单中点击`外观`进入`网站外观`
+4. 找到`Slanted`，点击`启用`
+5. 根据需要更新设置外观
+
 ## License
 ###### [Theme License](http://alxmedia.se/themes/slanted/)
 > Copyright © 2016 [DT27](https://dt27.org)  
