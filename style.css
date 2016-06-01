@@ -930,7 +930,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .widget_meta > h3:after { content: "\f138"; }
 .widget_recent_comments > h3:after { content: "\f0e6"; }
 .widget_recent_entries > h3:after { content: "\f017"; }
-.widget_hot_entries > h3:after { content: "\f067"; }
+.widget_hot_entries > h3:after { content: "\f06d"; }
 .widget_calendar > h3:after { content: "\f271"; }
 .widget_rss > h3:after { content: "\f09e"; }
 .widget_pages > h3:after { content: "\f067"; }
@@ -1207,7 +1207,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 
 /* post author & admin comment */
 .comment-list li.comment-by-author > .comment-author:after,
-.comment-list li.comment-author-admin > .comment-parent:after { background: #00b2d7; display: block; position: absolute; content: "\f040"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; }
+.comment-list li.comment-author-admin > .comment-parent:after { background: #00b2d7; display: block; position: absolute; content: "\f007"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; }
 .comment-list li.comment-author-admin > .comment-parent:after { content: "\f005"; /* star for admin */ }
 .comment-list li.comment-by-author > .comment-author:after,
 .comment-list li.comment-author-admin > .comment-parent:after { top: 32px; left: -28px; font-size: 10px; padding: 2px; -webkit-border-radius: 3px; border-radius: 3px; }
