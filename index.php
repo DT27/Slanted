@@ -72,8 +72,11 @@ $this->need('header.php');
         <?php if (ceil($this->getTotal() / $this->parameter->pageSize) > 1): ?>
             <nav class="pagination group">
                 <div class="page-navigator">
+                    <?php  if(ceil($this->getTotal() / $this->parameter->pageSize)!=$this->request->page): ?>
                     <span class="pages">更多内容请翻页</span>
-                    <?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array(
+                    <?php
+                    endif;
+                    $this->pageNav('&laquo;', '&raquo;', 5, '...', array(
                         'wrapTag' => 'div',
                         'wrapClass' => '',
                         'itemTag' => '',
