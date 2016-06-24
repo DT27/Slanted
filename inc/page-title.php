@@ -24,7 +24,11 @@
             <h1><i class="fa fa-exclamation-circle"></i>Error 404. <span><?php _e('页面没找到'); ?></span></h1>
         <?php elseif ( $this->is('date') ): ?>
             <h2><?php $this->archiveTitle(); ?></h2>
-        <?php else: ?>
+            <?php elseif( $this->is('tag')): ?>
+            <h2><?php $this->archiveTitle(array(
+                    'tag'       =>  _t('标签 %s')
+                ), '', ''); ?></h2>
+            <?php else: ?>
             <h2><?php $this->title(); ?></h2>
 
         <?php endif; ?>
