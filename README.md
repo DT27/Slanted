@@ -1,4 +1,7 @@
 # [Slanted](https://dt27.org/Slanted-for-Typecho/)
+
+![](https://dt27.org/usr/uploads/2016/03/2586752105.png)
+
 Typecho Theme  
 移植自 Wordpress 主题 [slanted](http://alxmedia.se/themes/slanted/)  
 
