@@ -1310,7 +1310,8 @@ box-shadow: 0 1px 0 rgba(0,0,0,0.04); }
 /*  plugin : wp-pagenavi
 /* ------------------------------------ */
 .page-navigator { text-align: right; font-weight: 600; line-height: 20px; float: none; margin-right: -2px; text-align: center; }
-.page-navigator a,
+.page-navigator a { display: inline-block; padding: 0 10px; height: 30px; line-height: 30px; }
+.page-navigator li { display: inline-block; margin: 0 5px; }
 .page-navigator span { color: #bbb; font-size: 16px; padding: 7px 8px; display: inline; margin: 0 2px; }
 .page-navigator span.pages { font-size: 17px; font-weight: 300; display: block; margin-bottom: 1em!important; border: none!important; }
 .page-navigator span.pages:before { content: "\f15c"; font-family: FontAwesome; margin-right: 6px; }
