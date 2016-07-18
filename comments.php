@@ -9,7 +9,16 @@
     <?php $comments->listComments(); ?>
 
     </div>
-    <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
+    <div class="page-navigator">
+    <?php $comments->pageNav('&laquo;', '&raquo;', 5, '...', array(
+        'wrapTag' => 'div',
+        'wrapClass' => '',
+        'itemTag' => '',
+        'textTag' => 'a',
+        'currentClass' => 'current',
+        'prevClass' => 'previouspostslink',
+        'nextClass' => 'nextpostslink'
+    )); ?></div>
 
 
     <?php if($this->allow('comment')): ?>
