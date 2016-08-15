@@ -1,4 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php
+if($this->options->sidebarLocation!="-1"){
+?>
 <div class="sidebar s1 dark">
 
     <a class="sidebar-toggle" title="展开侧栏"><i class="fa icon-sidebar-toggle"></i></a>
@@ -100,3 +103,4 @@
     </div><!--/.sidebar-content-->
 
 </div><!--/.sidebar-->
+<?php } ?>

@@ -29,7 +29,7 @@
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
-<body class="<?php if ($this->is('index')): ?> home blog<?php endif; ?><?php if ($this->is('post')): ?> single single-post<?php echo ($this->options->sidebarLocation=='1'?' col-2cl':' col-2cr'); ?><?php endif; ?><?php if ($this->is('single')): ?> page<?php endif; ?><?php if($this->is('category')): ?> archive<?php endif; ?>">
+<body class="<?php if ($this->is('index')): ?> home blog<?php endif; ?><?php if ($this->is('post')): ?> single single-post<?php if($this->options->sidebarLocation!="-1") echo ($this->options->sidebarLocation=='1'?' col-2cl':' col-2cr'); ?><?php endif; ?><?php if ($this->is('single')): ?> page<?php endif; ?><?php if($this->is('category')): ?> archive<?php endif; ?>">
 <!--[if lt IE 8]>
     <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
 <![endif]-->

@@ -128,6 +128,7 @@ function themeConfig($form)
         array(
             '0' => '左',
             '1' => '右',
+            '-1' => '禁用',
         ),'1', _t('侧边栏位置'));
     $form->addInput($sidebarLocation);
 
