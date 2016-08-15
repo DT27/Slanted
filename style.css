@@ -193,7 +193,7 @@ input, textarea, button, select, label { font-family: inherit; }
 
 /*  base : entry
 /* ------------------------------------ */
-.entry { font-size: 18px; line-height: 1.6em; }
+.entry { font-size: 15px; line-height: 1.6em; }
 .entry p,
 .entry dd { margin-bottom: 1em; }
 .entry dt { color: #222; }
@@ -272,12 +272,12 @@ transition: all .2s ease;
 h1, h2, h3, h4, h5, h6 { color: #555; font-weight: 600; -ms-word-wrap: break-word; word-wrap: break-word; }
 .entry h1 span, .entry h2 span, .entry h3 span, .entry h4 span, .entry h5 span, .entry h6 span { color: #bbb; }
 .entry h1,.entry h2,.entry h3,.entry h4,.entry h5,.entry h6  { margin-bottom: 14px; font-weight: 400; line-height: 1.3em; }
-.entry h1 { font-size: 38px; letter-spacing: -1px; }
-.entry h2 { font-size: 34px; letter-spacing: -0.7px; }
-.entry h3 { font-size: 28px; letter-spacing: -0.5px; }
-.entry h4 { font-size: 24px; letter-spacing: -0.3px; }
-.entry h5 { font-size: 20px; font-weight: 600; }
-.entry h6 { font-size: 18px; font-weight: 600; text-transform: uppercase; }
+.entry h1 { font-size: 28px; letter-spacing: -1px; }
+.entry h2 { font-size: 24px; letter-spacing: -0.7px; }
+.entry h3 { font-size: 18px; letter-spacing: -0.5px; }
+.entry h4 { font-size: 14px; letter-spacing: -0.3px; }
+.entry h5 { font-size: 10px; font-weight: 600; }
+.entry h6 { font-size: 8px; font-weight: 600; text-transform: uppercase; }
 
 .heading,
 #reply-title { font-weight: normal; font-size: 18px; text-transform: uppercase; font-weight: 600; margin-bottom: 1em; }
@@ -707,7 +707,7 @@ box-shadow: inset 1px 0 0 rgba(255,255,255,0.05); }
 .post-thumbnail img { display: block; width: 100%; height: auto; }
 .post-thumbnail.small { float: left; margin-right: 20px; max-width: 180px; max-height: 180px;  }
 
-.post-title { font-size: 26px; line-height: 1.3em; font-weight: 600; margin-bottom: 20px; }
+.post-title { font-size: 22px; line-height: 1.3em; font-weight: 600; margin-bottom: 20px; }
 .post-title a { color: #555; border-bottom: 2px solid #eee; }
 .post-title a:hover { color: #00b2d7; border-color: #ccc; }
 
