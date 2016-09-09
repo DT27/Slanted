@@ -44,7 +44,7 @@ pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
 samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
 fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
 canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
-section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
@@ -73,7 +73,7 @@ a img {
 -moz-transition: opacity 0.2s ease;
 -o-transition: opacity 0.2s ease;
 transition: opacity 0.2s ease; }
-address,cite,em { font-style: normal; color: #777; font-size: 80%; }
+address,cite,em { color: #777; font-size: 90%; }
 strong { font-weight: 600; }
 .left,.alignleft { float: left; }
 .right,.alignright { float: right; }
@@ -224,6 +224,8 @@ input, textarea, button, select, label { font-family: inherit; }
 .entry sup { font-size: 62.5%; }
 .entry sub { vertical-align: sub; }
 .entry sup { vertical-align: super; }
+
+.entry a:hover { text-decoration: underline; }
 
 /* image position & caption */
 .entry img.size-auto,
@@ -892,7 +894,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 /* ------------------------------------------------------------------------- */
 .widget { color: #777; font-size: 14px; overflow: hidden; }
 .widget a { color: #777; }
-.widget a:hover { color: #222; }
+.widget a:hover { color: #00b2d7; }
 .widget > h3 { font-size: 13px; font-weight: 600; text-transform: uppercase; margin: 0 -49px 10px; padding: 0 50px; border-bottom: 1px solid #eee; }
 .widget > h3 a,
 .widget > h3 a:hover { color: #222; }
@@ -1437,8 +1439,8 @@ hr, .hr { border: 0; background: #eee; height: 1px; margin: 30px 0; }
 .entry code, .comment-content code {
 	border-radius: 3px;
 	padding: 2px 4px;
-	background-color: #f9f2f4;
-	color: #c7254e;
+	background-color: #2d91b4;
+	color: #fff;
 }
 .entry code, .comment-content code, pre {
 	font-family: Source Code Pro,Consolas,Menlo,Monaco,Courier New,monospace;
