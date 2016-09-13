@@ -11,14 +11,12 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php if($this->is('post')): ?><?php echo $this->categories[0]['name']; ?> - <?php endif; ?><?php $this->options->title(); ?></title>
-
-    <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/normalize/3.0.3/normalize.min.css':'http://cdn.staticfile.org/normalize/3.0.3/normalize.min.css'; ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=0.0.1'); ?>">
-	<?php if($this->options->dark==1): ?><link rel="stylesheet" href="<?php $this->options->themeUrl('dark.min.css'); ?>"><?php endif; ?>
+<?php if($this->options->dark==1): ?>    <link rel="stylesheet" href="<?php $this->options->themeUrl('dark.min.css'); ?>"><?php endif; ?>
     <script type="text/javascript" src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/jquery/1.11.3/jquery.min.js':'http://cdn.staticfile.org/jquery/1.11.3/jquery.min.js'; ?>"></script>
 
     <!--[if lt IE 9]>
