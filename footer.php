@@ -76,7 +76,6 @@
                     <div class="grid one-half last">
                         <?php showSocialLinks(); ?>
                     </div>
-                    <div class="statCode"><?php $this->options->statCode(); ?></div>
                 </div><!--/.pad-->
             </div>
         </section><!--/.container-->
@@ -87,5 +86,6 @@
 </div><!--/#wrapper-->
 <?php $this->footer(); ?>
 <script type="text/javascript" src="<?php $this->options->themeUrl('js/script.min.js'); ?>"></script>
+<div class="statCode"><?php $this->options->statCode(); ?></div>
 </body>
 </html>
