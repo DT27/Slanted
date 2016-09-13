@@ -86,6 +86,6 @@
     </div><!--/#wrapper-inner-->
 </div><!--/#wrapper-->
 <?php $this->footer(); ?>
-<script type="text/javascript" src="<?php $this->options->themeUrl('js/script.js'); ?>"></script>
+<script type="text/javascript" src="<?php $this->options->themeUrl('js/script.min.js'); ?>"></script>
 </body>
 </html>

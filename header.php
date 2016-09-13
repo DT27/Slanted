@@ -15,10 +15,10 @@
     <!-- 使用url函数转换相关路径 -->
     <link rel="stylesheet" href="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/normalize/3.0.3/normalize.min.css':'http://cdn.staticfile.org/normalize/3.0.3/normalize.min.css'; ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('responsive.min.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('fonts/font-awesome.min.css?ver=0.0.1'); ?>">
-	<?php if($this->options->dark==1): ?><link rel="stylesheet" href="<?php $this->options->themeUrl('dark.css'); ?>"><?php endif; ?>
+	<?php if($this->options->dark==1): ?><link rel="stylesheet" href="<?php $this->options->themeUrl('dark.min.css'); ?>"><?php endif; ?>
     <script type="text/javascript" src="<?php echo is_HTTPS()?'https://staticfile.qnssl.com/jquery/1.11.3/jquery.min.js':'http://cdn.staticfile.org/jquery/1.11.3/jquery.min.js'; ?>"></script>
 
     <!--[if lt IE 9]>
