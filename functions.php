@@ -5,7 +5,6 @@
  * @author     DT27
  * @copyright  Copyright (c) 2016 DT27 (https://dt27.org)
  * @license    GNU General Public License v3.0
- * @version    1.0.2
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 

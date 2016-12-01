@@ -11,7 +11,7 @@
  *
  * @package Slanted
  * @author DT27
- * @version 1.0.0
+ * @version 1.0.3
  * @link https://dt27.org
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

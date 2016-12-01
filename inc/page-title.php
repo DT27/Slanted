@@ -15,7 +15,10 @@
                 <?php if ( !$this->have() ): ?><i class="fa fa-exclamation-circle"></i><?php endif; ?>
                 <?php echo $this->getTotal(); ?> 条搜索结果
             </h1>
-
+        <?php elseif ( $this->is('author') ): ?>
+                <h2><i class="fa fa-user"></i>作者: <?php $this->archiveTitle(array(
+                            'author'    =>  _t('%s')
+                        ), '', ''); ?></h2>
         <?php elseif ( $this->is('category') ): ?>
             <h1><i class="fa fa-folder-open"></i>分类: <span><?php $this->archiveTitle(array(
                         'category'  =>  _t('%s')
@@ -25,8 +28,8 @@
         <?php elseif ( $this->is('date') ): ?>
             <h2><?php $this->archiveTitle(); ?></h2>
             <?php elseif( $this->is('tag')): ?>
-            <h2><?php $this->archiveTitle(array(
-                    'tag'       =>  _t('标签 %s')
+            <h2><i class="fa fa-tag"></i>标签: <?php $this->archiveTitle(array(
+                    'tag'       =>  _t('%s')
                 ), '', ''); ?></h2>
             <?php else: ?>
             <h2><?php $this->title(); ?></h2>
