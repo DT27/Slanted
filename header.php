@@ -76,7 +76,7 @@
                 <?php endif; ?>
 
                 <?php if ( $this->options->authorAvatar ): ?>
-                    <div class="slant-avatar"><a href="<?php $this->options->siteUrl(); ?>"><img src="<?php $this->options->authorAvatar() ?>" alt="" /></a></div>
+                    <div class="slant-avatar"><a href="<?php $this->options->siteUrl(); ?>" title="<?php $this->options->title(); ?>"><img src="<?php $this->options->authorAvatar() ?>" alt="<?php $this->options->title(); ?>" /></a></div>
                 <?php endif; ?>
 
             </div><!--/.pad-->

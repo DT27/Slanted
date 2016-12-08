@@ -285,7 +285,7 @@ if ( ! function_exists( 'siteTitle' ) ) {
             $logo = Helper::options()->title;
         }
 
-        $link = '<a href="'.Helper::options()->siteUrl.'" rel="home">'.$logo.'</a>';
+        $link = '<a href="'.Helper::options()->siteUrl.'" rel="home" title="'.Helper::options()->title.'">'.$logo.'</a>';
 
         if ( $from->is('post') ) {
             $sitename = '<p class="site-title">'.$link.'</p>'."\n";
