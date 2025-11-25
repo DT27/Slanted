@@ -362,7 +362,7 @@ if ( ! function_exists( 'dynamicSidebar' ) ) {
             echo '</ul></div>';
         }else if($sidebarName=='footer-3'){
             echo '<div class="widget widget_hot_entries" id="hot-posts-2"><h3 class="group"><span>最热文章</span></h3><ul>';
-            SlantedExtend_Plugin::theMostViewed(5, 0);
+            if(array_key_exists('SlantedExtend',Typecho_Plugin::export()['activated'])){SlantedExtend_Plugin::theMostViewed(5, 0);}else{echo 'SlantedExtend 插件未启用';}
             echo '</ul></div>';
         }
 
