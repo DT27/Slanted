@@ -3,7 +3,7 @@
  *
  * 移植自 AlxMedia 的 Wordpress 主题 <a href="http://alxmedia.se/themes/slanted/">Slanted</a>
  *
- * 需同时安装扩展插件<a href="https://dt27.org/SlantedExtend-for-Typecho/" target="_blank">SlantedExtend</a>
+ * 需同时安装扩展插件<a href="https://dt27.cn/SlantedExtend-for-Typecho/" target="_blank">SlantedExtend</a>
  *
  *
  * License: GNU General Public License v3.0
@@ -12,7 +12,7 @@
  * @package Slanted
  * @author DT27
  * @version 1.1.0
- * @link https://dt27.org
+ * @link https://dt27.cn
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('header.php');
