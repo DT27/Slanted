@@ -1,12 +1,12 @@
-# [Slanted](https://dt27.org/Slanted-for-Typecho/)
+# [Slanted](https://dt27.cn/Slanted-for-Typecho/)
 
-![](https://dt27.org/usr/uploads/2016/03/2586752105.png)
-![](https://dt27.org/usr/uploads/2017/06/1430667370.jpg)
-![Slanted手机界面](https://cdn.youjb.com/images/2017/06/09/Screenshot_20170609-085725ddb09.md.png)
+![](https://dt27.cn/usr/uploads/2016/03/2586752105.png)
+![](https://dt27.cn/usr/uploads/2017/06/1430667370.jpg)
+![Slanted手机界面](https://youjb.com/images/2017/06/09/Screenshot_20170609-085725ddb09.md.png)
 Typecho Theme  
 移植自 Wordpress 主题 [slanted](http://alxmedia.se/themes/slanted/)  
 
-**需要同时安装支持插件 [SlantedExtend](https://dt27.org/SlantedExtend)。**  
+**需要同时安装支持插件 [SlantedExtend](https://dt27.cn/SlantedExtend)。**  
 
 ## Features
 * 头部 Slanted*（倾斜）*设计，突出中间的图片，使你脱颖而出。
@@ -44,7 +44,7 @@ Typecho Theme
 
 ## License
 ###### [Theme License](http://alxmedia.se/themes/slanted/)
-> Copyright © 2016 [DT27](https://dt27.org)  
+> Copyright © 2016 [DT27](https://dt27.cn)  
 > License: [GNU General Public License v3.0](http://www.gnu.org/licenses/gpl-3.0.html)  
 
 ###### [Font Awesome](http://fontawesome.io)
