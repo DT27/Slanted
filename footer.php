@@ -68,7 +68,7 @@
                         </div><!--/#copyright-->
 
                         <div id="credit">
-                            <p><?php _e('由 <a href="http://www.typecho.org">Typecho</a> 构建'); ?>. 使用 <a href="https://dt27.org/Slanted-for-Typecho/" rel="nofollow">Slanted</a> 主题.</p>
+                            <p><?php _e('由 <a href="http://www.typecho.org">Typecho</a> 构建'); ?>. 使用 <a href="https://dt27.cn/Slanted-for-Typecho/" rel="nofollow">Slanted</a> 主题.</p>
                         </div><!--/#credit-->
 
                     </div>
